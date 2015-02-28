@@ -44,11 +44,14 @@
                         </mask>
                     </variation>
                 </label>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-a9-MP3">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="255" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-a9-MP3">
                     <rect key="frame" x="73" y="62" width="509" height="31"/>
                 </slider>
-                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="LXm-4U-tkc">
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="255" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="LXm-4U-tkc">
                     <rect key="frame" x="73" y="103" width="509" height="31"/>
+                </slider>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="255" minValue="0.0" maxValue="255" translatesAutoresizingMaskIntoConstraints="NO" id="8HN-dm-fR4">
+                    <rect key="frame" x="73" y="144" width="509" height="31"/>
                 </slider>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -65,9 +68,12 @@
                 <constraint firstItem="PGT-71-lfz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QZL-Mm-95W"/>
                 <constraint firstAttribute="trailing" secondItem="sZW-a9-MP3" secondAttribute="trailing" constant="20" symbolic="YES" id="S2H-yM-2Zc"/>
                 <constraint firstItem="PGT-71-lfz" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WIs-d6-qgJ"/>
+                <constraint firstAttribute="trailing" secondItem="8HN-dm-fR4" secondAttribute="trailing" constant="20" symbolic="YES" id="ZZU-4J-IlK"/>
                 <constraint firstItem="sZW-a9-MP3" firstAttribute="width" secondItem="LXm-4U-tkc" secondAttribute="width" id="aub-zn-EfV"/>
                 <constraint firstItem="sZW-a9-MP3" firstAttribute="leading" secondItem="LXm-4U-tkc" secondAttribute="leading" id="avV-RN-wGV"/>
+                <constraint firstItem="8HN-dm-fR4" firstAttribute="centerY" secondItem="Xg2-f9-CTc" secondAttribute="centerY" id="cBQ-mm-hsa"/>
                 <constraint firstItem="sYK-Yd-fF6" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" symbolic="YES" id="fXn-rP-ozY"/>
+                <constraint firstItem="8HN-dm-fR4" firstAttribute="width" secondItem="LXm-4U-tkc" secondAttribute="width" id="ipt-o8-WY4"/>
                 <constraint firstItem="sYK-Yd-fF6" firstAttribute="trailing" secondItem="Xg2-f9-CTc" secondAttribute="trailing" id="s32-si-9fM"/>
                 <constraint firstItem="sZW-a9-MP3" firstAttribute="leading" secondItem="PGT-71-lfz" secondAttribute="trailing" id="xEU-Mr-CbF"/>
                 <constraint firstItem="sYK-Yd-fF6" firstAttribute="top" secondItem="CTn-dc-xdX" secondAttribute="bottom" constant="20" id="xkc-UK-3Cv"/>
@@ -76,9 +82,9 @@
             <variation key="default">
                 <mask key="constraints">
                     <exclude reference="8ld-v4-xOK"/>
-                    <exclude reference="ynn-Pc-os6"/>
                     <exclude reference="OBq-1f-Axv"/>
                     <exclude reference="xEU-Mr-CbF"/>
+                    <exclude reference="ynn-Pc-os6"/>
                 </mask>
             </variation>
             <point key="canvasLocation" x="706" y="658"/>
