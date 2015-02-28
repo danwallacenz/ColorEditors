@@ -10,25 +10,31 @@ import Foundation
 
 class Color {
     
-    init(red: Float, green: Float, blue: Float) {
+    init(red: Float, green: Float, blue: Float, alpha: Float) {
         self.red = red
         self.green = green
         self.blue = blue
+        self.alpha = alpha
     }
     
     var red: Float   {
         didSet {
-            println("red")
+//            println("red")
         }
     }
     var green: Float  {
         didSet {
-            println("green")
+//            println("green")
         }
     }
     var blue: Float {
         didSet {
-            println("blue")
+//            println("blue")
+        }
+    }
+    var alpha: Float {
+        didSet {
+            println("alpha set")
         }
     }
 }

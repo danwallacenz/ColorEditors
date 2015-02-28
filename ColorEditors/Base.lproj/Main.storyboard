@@ -72,24 +72,41 @@
                                             <action selector="blueSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="B76-q6-3TF"/>
                                         </connections>
                                     </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="dF3-0C-vYr">
+                                        <rect key="frame" x="73" y="185" width="509" height="31"/>
+                                        <connections>
+                                            <action selector="alphaSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="FLt-7H-INE"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alpha" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWw-fz-tiO">
+                                        <rect key="frame" x="23" y="189" width="44" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="HmX-x8-6p0" firstAttribute="width" secondItem="i1G-QC-tdi" secondAttribute="width" id="3h9-us-KDf"/>
+                                    <constraint firstItem="dF3-0C-vYr" firstAttribute="width" secondItem="HmX-x8-6p0" secondAttribute="width" id="4Wu-O7-BFH"/>
                                     <constraint firstItem="fcV-I1-XUn" firstAttribute="top" secondItem="Oyf-gh-rfw" secondAttribute="bottom" constant="8" symbolic="YES" id="6dk-to-Gnh"/>
+                                    <constraint firstItem="nWw-fz-tiO" firstAttribute="trailing" secondItem="ZaI-Ql-xhw" secondAttribute="trailing" id="8s1-fg-zf6"/>
                                     <constraint firstItem="FAg-b1-j5Q" firstAttribute="leading" secondItem="UDw-HI-wh8" secondAttribute="leading" constant="20" symbolic="YES" id="BLf-JW-mWI"/>
                                     <constraint firstAttribute="trailing" secondItem="Oyf-gh-rfw" secondAttribute="trailing" id="I4g-ju-PFd"/>
                                     <constraint firstItem="d4f-dt-yts" firstAttribute="leading" secondItem="FAg-b1-j5Q" secondAttribute="leading" id="Iuh-Ay-Oq0"/>
                                     <constraint firstItem="FAg-b1-j5Q" firstAttribute="centerY" secondItem="i1G-QC-tdi" secondAttribute="centerY" id="Lbh-lt-eY6"/>
                                     <constraint firstItem="fcV-I1-XUn" firstAttribute="leading" secondItem="Oyf-gh-rfw" secondAttribute="trailing" id="LnZ-vZ-tTo"/>
+                                    <constraint firstItem="dF3-0C-vYr" firstAttribute="leading" secondItem="HmX-x8-6p0" secondAttribute="leading" id="Nwk-9h-LbK"/>
                                     <constraint firstItem="fcV-I1-XUn" firstAttribute="width" secondItem="i1G-QC-tdi" secondAttribute="width" id="R3N-Uc-FDg"/>
                                     <constraint firstItem="FAg-b1-j5Q" firstAttribute="trailing" secondItem="ZaI-Ql-xhw" secondAttribute="trailing" id="Tb2-Hj-KnO"/>
                                     <constraint firstItem="Oyf-gh-rfw" firstAttribute="leading" secondItem="UDw-HI-wh8" secondAttribute="leading" id="Uu0-WG-TtA"/>
                                     <constraint firstAttribute="trailing" secondItem="fcV-I1-XUn" secondAttribute="trailing" constant="20" symbolic="YES" id="XY5-dZ-f1T"/>
                                     <constraint firstItem="FAg-b1-j5Q" firstAttribute="top" secondItem="d4f-dt-yts" secondAttribute="bottom" constant="20" id="Xbw-lR-IvA"/>
+                                    <constraint firstItem="nWw-fz-tiO" firstAttribute="top" secondItem="ZaI-Ql-xhw" secondAttribute="bottom" constant="20" id="ZNf-8F-BpU"/>
                                     <constraint firstItem="FAg-b1-j5Q" firstAttribute="leading" secondItem="ZaI-Ql-xhw" secondAttribute="leading" id="ZZg-Ft-wWT"/>
                                     <constraint firstItem="ZaI-Ql-xhw" firstAttribute="top" secondItem="FAg-b1-j5Q" secondAttribute="bottom" constant="20" id="ZjR-pa-3hY"/>
                                     <constraint firstItem="fcV-I1-XUn" firstAttribute="centerY" secondItem="d4f-dt-yts" secondAttribute="centerY" id="ata-dz-2SQ"/>
+                                    <constraint firstItem="nWw-fz-tiO" firstAttribute="centerY" secondItem="dF3-0C-vYr" secondAttribute="centerY" id="c6y-Td-Ddp"/>
                                     <constraint firstItem="fcV-I1-XUn" firstAttribute="leading" secondItem="i1G-QC-tdi" secondAttribute="leading" id="cIr-fG-EsM"/>
                                     <constraint firstItem="HmX-x8-6p0" firstAttribute="centerY" secondItem="ZaI-Ql-xhw" secondAttribute="centerY" id="e9W-rg-haI"/>
                                     <constraint firstItem="d4f-dt-yts" firstAttribute="trailing" secondItem="FAg-b1-j5Q" secondAttribute="trailing" id="fEo-KE-HEE"/>
@@ -117,6 +134,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alphaSlider" destination="dF3-0C-vYr" id="HBd-KZ-W89"/>
                         <outlet property="blueSlider" destination="HmX-x8-6p0" id="IKr-BH-I39"/>
                         <outlet property="colorEditor" destination="UDw-HI-wh8" id="X3J-0S-fC4"/>
                         <outlet property="greenSlider" destination="i1G-QC-tdi" id="fpG-i8-7Qf"/>
