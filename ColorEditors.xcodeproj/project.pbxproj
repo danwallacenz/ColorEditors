@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		CB2D3A261AA1681300F46B1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A251AA1681300F46B1E /* AppDelegate.swift */; };
-		CB2D3A281AA1681300F46B1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A271AA1681300F46B1E /* ViewController.swift */; };
+		CB2D3A281AA1681300F46B1E /* ColorEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A271AA1681300F46B1E /* ColorEditorViewController.swift */; };
 		CB2D3A2B1AA1681300F46B1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A291AA1681300F46B1E /* Main.storyboard */; };
 		CB2D3A2D1AA1681300F46B1E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A2C1AA1681300F46B1E /* Images.xcassets */; };
 		CB2D3A301AA1681300F46B1E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A2E1AA1681300F46B1E /* LaunchScreen.xib */; };
 		CB2D3A3C1AA1681300F46B1E /* ColorEditorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A3B1AA1681300F46B1E /* ColorEditorsTests.swift */; };
 		CB2D3A461AA1689F00F46B1E /* ColorEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CB2D3A451AA1689F00F46B1E /* ColorEditorView.xib */; };
 		CB2D3A481AA168E800F46B1E /* ColorEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A471AA168E800F46B1E /* ColorEditorView.swift */; };
+		CB2D3A4B1AA16FB700F46B1E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB2D3A4A1AA16FB700F46B1E /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +32,7 @@
 		CB2D3A201AA1681300F46B1E /* ColorEditors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorEditors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB2D3A241AA1681300F46B1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB2D3A251AA1681300F46B1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB2D3A271AA1681300F46B1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB2D3A271AA1681300F46B1E /* ColorEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEditorViewController.swift; sourceTree = "<group>"; };
 		CB2D3A2A1AA1681300F46B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB2D3A2C1AA1681300F46B1E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CB2D3A2F1AA1681300F46B1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -40,6 +41,7 @@
 		CB2D3A3B1AA1681300F46B1E /* ColorEditorsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorEditorsTests.swift; sourceTree = "<group>"; };
 		CB2D3A451AA1689F00F46B1E /* ColorEditorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ColorEditorView.xib; sourceTree = "<group>"; };
 		CB2D3A471AA168E800F46B1E /* ColorEditorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorEditorView.swift; path = ColorEditors/ColorEditorView.swift; sourceTree = "<group>"; };
+		CB2D3A4A1AA16FB700F46B1E /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +65,6 @@
 		CB2D3A171AA1681300F46B1E = {
 			isa = PBXGroup;
 			children = (
-				CB2D3A451AA1689F00F46B1E /* ColorEditorView.xib */,
-				CB2D3A471AA168E800F46B1E /* ColorEditorView.swift */,
 				CB2D3A221AA1681300F46B1E /* ColorEditors */,
 				CB2D3A381AA1681300F46B1E /* ColorEditorsTests */,
 				CB2D3A211AA1681300F46B1E /* Products */,
@@ -83,12 +83,11 @@
 		CB2D3A221AA1681300F46B1E /* ColorEditors */ = {
 			isa = PBXGroup;
 			children = (
-				CB2D3A251AA1681300F46B1E /* AppDelegate.swift */,
-				CB2D3A271AA1681300F46B1E /* ViewController.swift */,
+				CB2D3A491AA16E7B00F46B1E /* Views */,
+				CB2D3A271AA1681300F46B1E /* ColorEditorViewController.swift */,
 				CB2D3A291AA1681300F46B1E /* Main.storyboard */,
-				CB2D3A2C1AA1681300F46B1E /* Images.xcassets */,
-				CB2D3A2E1AA1681300F46B1E /* LaunchScreen.xib */,
 				CB2D3A231AA1681300F46B1E /* Supporting Files */,
+				CB2D3A4A1AA16FB700F46B1E /* Color.swift */,
 			);
 			path = ColorEditors;
 			sourceTree = "<group>";
@@ -96,6 +95,9 @@
 		CB2D3A231AA1681300F46B1E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB2D3A2C1AA1681300F46B1E /* Images.xcassets */,
+				CB2D3A251AA1681300F46B1E /* AppDelegate.swift */,
+				CB2D3A2E1AA1681300F46B1E /* LaunchScreen.xib */,
 				CB2D3A241AA1681300F46B1E /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -116,6 +118,16 @@
 				CB2D3A3A1AA1681300F46B1E /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CB2D3A491AA16E7B00F46B1E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB2D3A451AA1689F00F46B1E /* ColorEditorView.xib */,
+				CB2D3A471AA168E800F46B1E /* ColorEditorView.swift */,
+			);
+			name = Views;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,7 +232,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB2D3A481AA168E800F46B1E /* ColorEditorView.swift in Sources */,
-				CB2D3A281AA1681300F46B1E /* ViewController.swift in Sources */,
+				CB2D3A4B1AA16FB700F46B1E /* Color.swift in Sources */,
+				CB2D3A281AA1681300F46B1E /* ColorEditorViewController.swift in Sources */,
 				CB2D3A261AA1681300F46B1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
